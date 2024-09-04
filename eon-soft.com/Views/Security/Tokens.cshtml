@@ -1,0 +1,18 @@
+﻿@page "/tokens"
+@using eon_soft.com.Models
+
+<h1>Token View</h1>
+
+
+<h3>Current Tokens</h3>
+<h5>
+    @{
+        var accessToken = TokenClient.ACCESS_TOKEN.ToString();
+        var idToken = TokenClient.ID_TOKEN.ToString();
+        var refreshToken = TokenClient.REFRESH_TOKEN.ToString();
+    }
+    <p>Access Token: @accessToken</p>
+    <p>ID Token: @idToken</p>
+    <p>Refresh Token: @refreshToken</p>
+
+</h5>

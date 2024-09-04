@@ -1,0 +1,17 @@
+﻿@page "/protected"
+@using System.Security.Claims
+
+<!-- Needed so that POSTs send an anti-forgery token -->
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Protected View</h1>
+
+
+<h3>Current Claims</h3>
+<h5>
+    @foreach (var claim in User.Claims)
+    {
+        <p>Claim: @claim.Type.ToString()</p>
+        <p>Value: @claim.Value.ToString()</p>
+    }
+</h5>

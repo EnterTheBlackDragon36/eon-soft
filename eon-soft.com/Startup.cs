@@ -23,6 +23,7 @@ namespace eon_soft.com
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 option.Filters.Add(new AuthorizeFilter(policy));
             }).AddMicrosoftIdentityUI();
+            services.AddHttpContextAccessor();
         }
 
 

@@ -361,6 +361,7 @@ C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debu
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Azure.Cosmos.Core.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Azure.Cosmos.Direct.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Azure.Services.AppAuthentication.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Bcl.HashCode.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Build.dll
@@ -403,6 +404,7 @@ C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debu
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Identity.Web.TokenCache.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.Identity.Web.UI.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\bin\Debug\net8.0\Microsoft.IdentityModel.LoggingExtensions.dll
@@ -636,6 +638,7 @@ C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debu
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\eon-soft.com.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\eon-soft.com.RazorAssemblyInfo.cache
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\eon-soft.com.RazorAssemblyInfo.cs
+C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\eon-soft.com.sourcelink.json
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\spide\source\repos\EnterTheBlackDragon36\eon-soft\eon-soft.com\obj\Debug\net8.0\staticwebassets\msbuild.eon-soft.com.Microsoft.AspNetCore.StaticWebAssets.props

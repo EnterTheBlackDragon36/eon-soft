@@ -8,22 +8,59 @@ namespace eon_soft.com.Controllers
     public class SecurityController : Controller
     {
         public static IConfiguration Configuration { get; set; }
+        public readonly HttpContextAccessor _httpContextAccessor;
 
         public SecurityController(IConfiguration configuration)
         {
-            Configuration = configuration;
+            Configuration = configuration; 
         }
 
-        public ActionResult Index()
+        public IActionResult Protected()
         {
-            return View("~/Views/Security/Protected.cshtml");
+            return View();
         }
 
-        public ActionResult ReviewToken()
+        public IActionResult Tokens()
         {
             TokenClient tokenClient = new TokenClient(Configuration);
-            var token = tokenClient.GetIdToken(this.HttpContext);
-            return View("~/Views/Security/Tokens.cshtml");
+
+            var idToken = "";
+            //HttpCookie
+            //System.Web.HttpCookie cookie = Request.Cookies["AspNetCore.Cookies"];
+            //var token = tokenClient.GetToken();
+            //var cookie = this.HttpContext.Request.Cookies["AspNetCore.Cookies"];
+
+            var cookieName = ".AspNetCore.Cookies";
+
+            var cookies = Request.Cookies;
+            foreach (var cookie in cookies)
+            {
+                string name = cookie.Key;
+                string value = cookie.Value;
+                if (name == cookieName) { idToken = value; }
+            }
+         
+            //var token = this.HttpContext.Response.Cookies["AspNetCore.Cookies"].Value;
+            var token1 = tokenClient.GetAzureToken();
+            //var accessToken = tokenClient.GetAccessToken(this.HttpContext);
+            //var idToken = tokenClient.GetIdToken(this.HttpContext);
+            //var refreshToken = tokenClient.GetRefreshToken(this.HttpContext);
+            //ViewBag.AccessToken = accessToken;
+            //ViewBag.RefreshToken = refreshToken;
+            ViewBag.IdToken = idToken;
+            return View();
         }
+
+        //public ActionResult Index()
+        //{
+        //    return View("~/Views/Security/Protected.cshtml");
+        //}
+
+        //public ActionResult ReviewToken()
+        //{
+        //    TokenClient tokenClient = new TokenClient(Configuration);
+        //    var token = tokenClient.GetIdToken(this.HttpContext);
+        //    return View("~/Views/Security/Tokens.cshtml");
+        //}
     }
 }

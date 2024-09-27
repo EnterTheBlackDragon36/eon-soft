@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.Azure.Services.AppAuthentication;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
+using System.Globalization;
 using System.Text.Json.Nodes;
 
 namespace eon_soft.com.Models
@@ -9,11 +12,11 @@ namespace eon_soft.com.Models
         public static string REFRESH_TOKEN = "refresh_token";
         public static string ID_TOKEN = "id_token";
 
-        private readonly IConfiguration configuration;
+        private readonly IConfiguration _configuration;
 
         public TokenClient(IConfiguration configuration)
         {
-            this.configuration = configuration;
+            this._configuration = configuration;
         }
 
         /*
@@ -21,10 +24,9 @@ namespace eon_soft.com.Models
          */
         public async Task<string> GetAccessToken(HttpContext context)
         {
-            string accessToken = context.Request.Cookies[".AspNetCore.Cookies"].ToString();
+            var accessToken = await context.GetTokenAsync(ACCESS_TOKEN); 
             if (!string.IsNullOrEmpty(accessToken)) { ACCESS_TOKEN = accessToken; }
-            return await context.GetTokenAsync(ACCESS_TOKEN);
-
+            return accessToken;
         }
 
         /*
@@ -32,9 +34,10 @@ namespace eon_soft.com.Models
          */
         public async Task<string> GetIdToken(HttpContext context)
         {
-            string idToken = context.Request.Cookies[".AspNetCore.Cookies"].ToString();
+
+            var idToken = context.Request.Cookies[".AspNetCore.Cookies"];
             if (!string.IsNullOrEmpty(idToken)) { ID_TOKEN = idToken; }
-            return await context.GetTokenAsync(ID_TOKEN);
+            return idToken;
         }
 
         /*
@@ -44,6 +47,57 @@ namespace eon_soft.com.Models
         {
             return await context.GetTokenAsync(REFRESH_TOKEN);
         }
+
+        public async Task<string> GetAzureToken()
+        {
+            var tokenUri = _configuration.GetSection("AzureAd:TokenEndpoint").Value;
+            var azureServiceTokenProvider = new AzureServiceTokenProvider();
+            var accessToken = await azureServiceTokenProvider.GetAccessTokenAsync(tokenUri);
+
+            return accessToken;
+        }
+
+        public string GetToken()
+        {
+
+            // TODO: Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612
+            // and add using Microsoft.IdentityModel.Clients.ActiveDirectory
+
+            //The client id that Azure AD created when you registered your client app.
+            string clientID = _configuration.GetSection("AzureAd:ClientId").ToString();
+            string clientSecret = _configuration.GetSection("AzureAd:ClientSecret").ToString();
+            string AuthEndPoint = _configuration.GetSection("AzureAd:TokenEndpoint").ToString();
+            string TenantId = _configuration.GetSection("AzureAd:TenantId").ToString();
+
+            //RedirectUri you used when you register your app.
+            //For a client app, a redirect uri gives Azure AD more details on the application that it will authenticate.
+            // You can use this redirect uri for your client app
+            string redirectUri = "https://login.microsoftonline.com/common/oauth2/nativeclient";
+
+            //Resource Uri for Power BI API
+            string resourceUri = "https://analysis.windows.net/powerbi/api";
+
+            //Get access token:
+            // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
+            // AuthenticationContext is part of the Active Directory Authentication Library NuGet package
+            // To install the Active Directory Authentication Library NuGet package in Visual Studio,
+            //  run "Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory" from the nuget Package Manager Console.
+
+
+            ClientCredential cc = new ClientCredential(clientID, clientSecret);
+
+
+            // AcquireToken will acquire an Azure access token
+            // Call AcquireToken to get an Azure token from Azure Active Directory token issuance endpoint
+            string authority = string.Format(CultureInfo.InvariantCulture, AuthEndPoint, TenantId);
+            AuthenticationContext authContext = new AuthenticationContext(authority);
+            string token = authContext.AcquireTokenAsync("https://management.azure.com/", cc).Result.AccessToken;
+            //Console.WriteLine(token);
+            Console.ReadLine();
+            return token;
+        }
+
+
 
         /*
          * Do the work of getting new tokens and updating cookies
@@ -59,10 +113,10 @@ namespace eon_soft.com.Models
          */
         private async Task<JsonNode> RefreshTokens(HttpContext context)
         {
-            var tokenEndpoint = this.configuration.GetValue<string>("OpenIdConnect:TokenEndpoint");
+            var tokenEndpoint = this._configuration.GetValue<string>("OpenIdConnect:TokenEndpoint");
 
-            var clientId = this.configuration.GetValue<string>("OpenIdConnect:ClientId");
-            var clientSecret = this.configuration.GetValue<string>("OpenIdConnect:ClientSecret");
+            var clientId = this._configuration.GetValue<string>("OpenIdConnect:ClientId");
+            var clientSecret = this._configuration.GetValue<string>("OpenIdConnect:ClientSecret");
             var refreshToken = await context.GetTokenAsync(REFRESH_TOKEN);
 
             var requestData = new[]

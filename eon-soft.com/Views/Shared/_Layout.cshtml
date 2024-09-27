@@ -25,16 +25,44 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Administrator" asp-action="Dashboard">Administrator</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Application" asp-action="Application">Application</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Automation" asp-action="Automation">Automation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="DataStore" asp-action="DataStore">DataStore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Feature" asp-action="Feature">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Resource" asp-action="Resource">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Service" asp-action="Service">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Security" asp-action="Protected">Security</a>
+                            </li>
+                            
+                        }
                     </ul>
                     <ul class="navbar-nav">
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <span class="navbar-text text-dark">Hello @User.Claims?.Where(c => c.Type == "name").FirstOrDefault()?.Value.ToString()</span>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Index">Claims</a>
+                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Protected">Claims</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="ReviewToken">Tokens</a>
+                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Tokens">Tokens</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>
@@ -43,7 +71,7 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Security" asp-action="Index">Sign in</a>
+                                <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Security" asp-action="Protected">Sign in</a>
                             </li>
                         }
                     </ul>

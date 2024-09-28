@@ -1,0 +1,14 @@
+name: Run Azure DevOps to GitHub Sync with PowerShell
+
+on:
+    workflow_dispatch:
+    
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out repo
+            uses: actions/checkout@v2
+            
+          - run: |
+              ./azure-devops-github-sync.ps1 -GitHubDestinationPAT ${{ secrets.GITHUBDESTINATIONPAT }} -ADOSourcePAT ${{ secrets.ADOSOURCEPAT }}

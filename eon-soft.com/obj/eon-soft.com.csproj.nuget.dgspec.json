@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\spide\\source\\repos\\EnterTheBlackDragon36\\eon-soft\\eon-soft.com\\eon-soft.com.csproj": {}
+    "C:\\Users\\spide\\source\\repos\\eon-soft\\eon-soft.com\\eon-soft.com.csproj": {}
   },
   "projects": {
-    "C:\\Users\\spide\\source\\repos\\EnterTheBlackDragon36\\eon-soft\\eon-soft.com\\eon-soft.com.csproj": {
+    "C:\\Users\\spide\\source\\repos\\eon-soft\\eon-soft.com\\eon-soft.com.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\spide\\source\\repos\\EnterTheBlackDragon36\\eon-soft\\eon-soft.com\\eon-soft.com.csproj",
+        "projectUniqueName": "C:\\Users\\spide\\source\\repos\\eon-soft\\eon-soft.com\\eon-soft.com.csproj",
         "projectName": "eon-soft.com",
-        "projectPath": "C:\\Users\\spide\\source\\repos\\EnterTheBlackDragon36\\eon-soft\\eon-soft.com\\eon-soft.com.csproj",
+        "projectPath": "C:\\Users\\spide\\source\\repos\\eon-soft\\eon-soft.com\\eon-soft.com.csproj",
         "packagesPath": "C:\\Users\\spide\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\spide\\source\\repos\\EnterTheBlackDragon36\\eon-soft\\eon-soft.com\\obj\\",
+        "outputPath": "C:\\Users\\spide\\source\\repos\\eon-soft\\eon-soft.com\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -147,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

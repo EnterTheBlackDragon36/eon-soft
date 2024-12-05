@@ -11,11 +11,11 @@ public class Program
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-.ConfigureAppConfiguration((context, config) =>
-{
-var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("AzureKeyVault")!);
-config.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
-})
+            .ConfigureAppConfiguration((context, config) =>
+            {
+            var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("AzureKeyVault")!);
+            config.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
+            })
             .ConfigureWebHostDefaults(config =>
             {
                 config.UseStartup<Startup>();

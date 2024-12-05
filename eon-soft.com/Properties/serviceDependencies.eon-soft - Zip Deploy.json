@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "secrets2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.Web/sites/eon-soft/providers/Microsoft.ServiceLinker/linkers/KeyVaultUri_4264526D53",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/kv-eonsofto880816474822",
+      "type": "secrets.keyVault",
+      "connectionId": "KeyVaultUri",
+      "dynamicId": null
+    },
+    "identityapp1": {
+      "connectionInfo": "App registration: eon-soft-auth-app, Tenant: Default Directory (spider12345hotmail.onmicrosoft.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    }
+  }
+}

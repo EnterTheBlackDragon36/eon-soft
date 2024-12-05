@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "secrets2": {
+      "restored": true,
+      "restoreTime": "2024-12-05T02:12:38.0769195Z"
+    },
+    "identityapp1": {
+      "restored": true,
+      "restoreTime": "2024-12-05T17:17:51.0228015Z"
+    }
+  },
+  "parameters": {
+    "secrets2.resourceGroupName": {
+      "Name": "secrets2.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "eon-soft-ai"
+    },
+    "secrets2.subscriptionId": {
+      "Name": "secrets2.subscriptionId",
+      "Type": "subscription",
+      "Value": "2cdb542d-f421-4678-9ff5-968a8ff3fc67"
+    },
+    "secrets2.serviceConnectorResourceGroupName": {
+      "Name": "secrets2.serviceConnectorResourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "eon-soft"
+    }
+  }
+}

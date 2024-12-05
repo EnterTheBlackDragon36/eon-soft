@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eon-soft.com", "eon-soft.com\eon-soft.com.csproj", "{49DD2A06-157F-4B0F-BDEF-37CF46423C30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eon-soft.core", "eon-soft.core\eon-soft.core.csproj", "{41BC1113-97A6-4B95-8BA3-30CC05F4FC19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49DD2A06-157F-4B0F-BDEF-37CF46423C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49DD2A06-157F-4B0F-BDEF-37CF46423C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49DD2A06-157F-4B0F-BDEF-37CF46423C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BC1113-97A6-4B95-8BA3-30CC05F4FC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BC1113-97A6-4B95-8BA3-30CC05F4FC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BC1113-97A6-4B95-8BA3-30CC05F4FC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BC1113-97A6-4B95-8BA3-30CC05F4FC19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

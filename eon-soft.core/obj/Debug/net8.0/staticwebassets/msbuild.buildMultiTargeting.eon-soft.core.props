@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\eon-soft.core.props" />
+</Project>

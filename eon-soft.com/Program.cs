@@ -1,6 +1,7 @@
 using eon_soft.com;
 using Azure.Identity;
 using Microsoft.Extensions.Configuration;
+using System.Configuration;
 
 public class Program
 {
@@ -13,8 +14,12 @@ public class Program
         Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration((context, config) =>
             {
-            var keyVaultEndpoint = new Uri(Environment.GetEnvironmentVariable("AzureKeyVault")!);
-            config.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
+                var builder = WebApplication.CreateBuilder(args);
+                // Add Key Vault configuration
+                var keyVaultUrl = $"https://{builder.Configuration["AzureAd:KeyVaultName"]}.vault.azure.net/";
+                builder.Configuration.AddAzureKeyVault(
+                new Uri(keyVaultUrl),
+                new DefaultAzureCredential());
             })
             .ConfigureWebHostDefaults(config =>
             {

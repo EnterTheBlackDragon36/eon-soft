@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>eon_soft.com</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/2cdb542d-f421-4678-9ff5-968a8ff3fc67/resourceGroups/eon-soft/providers/microsoft.insights/components/eon-soft</ApplicationInsightsResourceId>
+    <UserSecretsId>b1557d50-30c7-4275-a5ba-8735195c0511</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,13 +20,16 @@
     <PackageReference Include="Azure.Storage.Files.Shares" Version="12.21.0" />
     <PackageReference Include="Azure.Storage.Queues" Version="12.21.0" />
     <PackageReference Include="GMO.Microsoft.Azure.Services.AppAuthentication.Config" Version="1.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.8" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.46.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Cosmos" Version="8.0.6" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

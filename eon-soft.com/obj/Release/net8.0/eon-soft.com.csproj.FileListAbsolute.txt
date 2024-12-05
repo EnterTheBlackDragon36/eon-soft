@@ -334,6 +334,7 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\msvcp140.dl
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\vcruntime140.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\vcruntime140_1.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\appsettings.Development.json
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\appsettings.json
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\eon-soft.com.staticwebassets.runtime.json
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\eon-soft.com.staticwebassets.endpoints.json
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\eon-soft.com.exe
@@ -344,7 +345,9 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\eon-soft.co
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Core.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Identity.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Administration.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Certificates.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Keys.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Secrets.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Storage.Blobs.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Storage.Common.dll
@@ -665,5 +668,14 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\refint\eon-
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\eon-soft.com.pdb
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\eon-soft.com.genruntimeconfig.cache
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\ref\eon-soft.com.dll
-C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Administration.dll
-C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Azure.Security.KeyVault.Keys.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.ApplicationInsights.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.AI.DependencyCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.AI.EventCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.AI.WindowsServer.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.PerformanceCounter.dll

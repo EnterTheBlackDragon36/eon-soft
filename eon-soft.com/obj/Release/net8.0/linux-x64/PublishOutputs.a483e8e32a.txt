@@ -5,6 +5,7 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\P
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\vcruntime140.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\vcruntime140_1.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\appsettings.Development.json
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\appsettings.json
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\eon-soft.com.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\eon-soft.com.runtimeconfig.json
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\eon-soft.com.pdb
@@ -20,6 +21,13 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\P
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Azure.Storage.Files.Shares.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Azure.Storage.Queues.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Humanizer.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.ApplicationInsights.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AI.DependencyCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AI.EventCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AI.WindowsServer.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AI.ServerTelemetryChannel.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -66,7 +74,9 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\P
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Logging.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Logging.ApplicationInsights.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Extensions.Options.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Identity.Abstractions.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\Microsoft.Identity.Client.dll
@@ -119,6 +129,7 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\P
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Composition.Runtime.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Composition.TypedParts.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Diagnostics.PerformanceCounter.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.Drawing.Common.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\obj\Release\net8.0\linux-x64\PubTmp\Out\System.IO.Hashing.dll

@@ -597,3 +597,14 @@ C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\M
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Azure.Security.KeyVault.Administration.dll
 C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Azure.Security.KeyVault.Keys.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\appsettings.json
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.ApplicationInsights.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.AI.DependencyCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.AI.EventCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.AI.WindowsServer.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.Extensions.Logging.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\spide\source\repos\eon-soft\eon-soft.com\bin\Release\net8.0\linux-x64\System.Diagnostics.PerformanceCounter.dll

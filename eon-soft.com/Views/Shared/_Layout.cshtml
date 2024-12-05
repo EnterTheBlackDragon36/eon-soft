@@ -29,30 +29,20 @@
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Administrator" asp-action="Dashboard">Administrator</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Azure" asp-action="AzureAIServices">Azure AI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Application" asp-action="Application">Application</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Google" asp-action="GoogleAIServices">Google AI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Automation" asp-action="Automation">Automation</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Amazon" asp-action="AmazonAIServices">Amazon AI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="DataStore" asp-action="DataStore">DataStore</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Feature" asp-action="Feature">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Resource" asp-action="Resource">Resources</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apple" asp-action="AppleAIServices">Apple AI</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Service" asp-action="Service">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Security" asp-action="Protected">Security</a>
-                            </li>
-                            
+                            </li>                            
                         }
                     </ul>
                     <ul class="navbar-nav">
@@ -60,10 +50,7 @@
                         {
                             <span class="navbar-text text-dark">Hello @User.Claims?.Where(c => c.Type == "name").FirstOrDefault()?.Value.ToString()</span>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Protected">Claims</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Security" asp-action="Tokens">Tokens</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Administrator" asp-action="Dashboard">Administrator</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>

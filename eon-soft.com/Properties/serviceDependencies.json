@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "secrets1": {
-      "type": "secrets",
-      "connectionId": "CosmosDbUri"
-    },
     "cosmosdb1": {
       "type": "cosmosdb",
       "connectionId": "ConnectionStrings",
@@ -13,6 +9,10 @@
       "type": "storage",
       "connectionId": "AzureStorage",
       "dynamicId": null
+    },
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": "AzureKeyVault"
     }
   }
 }

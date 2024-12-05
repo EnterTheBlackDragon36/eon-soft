@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "secrets1": {
-      "secretStore": null,
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/eon-soft-kv",
-      "type": "secrets.keyVault",
-      "connectionId": "CosmosDbUri"
-    },
     "cosmosdb1": {
       "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/centralus/connectors/ConnectionStrings_80D1843567",
       "secretStore": "AzureKeyVault",
@@ -21,6 +15,12 @@
       "type": "storage.azure",
       "connectionId": "AzureStorage",
       "dynamicId": null
+    },
+    "secrets1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/kv-eonsofto880816474822",
+      "type": "secrets.keyVault",
+      "connectionId": "AzureKeyVault"
     }
   }
 }

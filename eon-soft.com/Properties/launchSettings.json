@@ -17,7 +17,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "CosmosDbUri": "https://eon-soft-kv.vault.azure.net/",
-        "AZURE_USERNAME": "spider12345@hotmail.com"
+        "AZURE_USERNAME": "spider12345@hotmail.com",
+        "AzureKeyVault": "https://kv-eonsofto880816474822.vault.azure.net/"
       }
     },
     "https": {
@@ -28,7 +29,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "CosmosDbUri": "https://eon-soft-kv.vault.azure.net/",
-        "AZURE_USERNAME": "spider12345@hotmail.com"
+        "AZURE_USERNAME": "spider12345@hotmail.com",
+        "AzureKeyVault": "https://kv-eonsofto880816474822.vault.azure.net/"
       }
     },
     "IIS Express": {
@@ -37,7 +39,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "CosmosDbUri": "https://eon-soft-kv.vault.azure.net/",
-        "AZURE_USERNAME": "spider12345@hotmail.com"
+        "AZURE_USERNAME": "spider12345@hotmail.com",
+        "AzureKeyVault": "https://kv-eonsofto880816474822.vault.azure.net/"
       }
     }
   }

@@ -1,38 +1,48 @@
 {
   "dependencies": {
     "cosmosdb1": {
-      "restored": true,
-      "restoreTime": "2024-09-03T02:11:59.6163822Z"
+      "restored": false,
+      "restoreTime": "2024-12-04T21:50:00.2151923Z"
     },
     "secrets1": {
       "restored": true,
-      "restoreTime": "2024-09-03T02:11:45.1883473Z"
+      "restoreTime": "2024-12-04T21:52:30.5168508Z"
     },
     "storage1": {
-      "restored": true,
-      "restoreTime": "2024-09-03T02:13:01.1280933Z"
+      "restored": false,
+      "restoreTime": "2024-12-04T21:50:00.2151923Z"
     }
   },
   "parameters": {
+    "secrets1.resourceGroupName": {
+      "Name": "secrets1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "eon-soft-ai"
+    },
+    "storage1.resourceGroupName": {
+      "Name": "storage1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "developer"
+    },
+    "storage1.resourceGroupLocation": {
+      "Name": "storage1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "centralus"
+    },
     "cosmosdb1.subscriptionId": {
       "Name": "cosmosdb1.subscriptionId",
       "Type": "subscription",
       "Value": "2cdb542d-f421-4678-9ff5-968a8ff3fc67"
-    },
-    "secrets1.resourceGroupName": {
-      "Name": "secrets1.resourceGroupName",
-      "Type": "resourceGroup",
-      "Value": "developer"
     },
     "cosmosdb1.resourceGroupName": {
       "Name": "cosmosdb1.resourceGroupName",
       "Type": "resourceGroup",
       "Value": "developer"
     },
-    "storage1.resourceGroupName": {
-      "Name": "storage1.resourceGroupName",
-      "Type": "resourceGroup",
-      "Value": "developer"
+    "cosmosdb1.resourceGroupLocation": {
+      "Name": "cosmosdb1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "centralus"
     },
     "storage1.subscriptionId": {
       "Name": "storage1.subscriptionId",

@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Extensions.Azure;
 using Microsoft.Identity.Web;
 using Microsoft.Identity.Web.UI;
 
@@ -15,9 +18,9 @@ namespace eon_soft.com
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
-        {
+        {            
             services.AddControllersWithViews();
-            services.AddMicrosoftIdentityWebAppAuthentication(Configuration);
+            services.AddMicrosoftIdentityWebAppAuthentication(Configuration, configSectionName: "AzureAd");
             services.AddMvc(option =>
             {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
@@ -53,6 +56,7 @@ namespace eon_soft.com
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
         }
     }
 }

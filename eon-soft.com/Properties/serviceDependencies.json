@@ -1,34 +1,7 @@
 {
   "dependencies": {
-    "cosmosdb1": {
-      "type": "cosmosdb",
-      "connectionId": "ConnectionStrings",
-      "dynamicId": null
-    },
-    "storage1": {
-      "type": "storage",
-      "connectionId": "AzureStorage",
-      "dynamicId": null
-    },
-    "secrets1": {
-      "type": "secrets",
-      "connectionId": "AzureKeyVault"
-    },
-    "secrets2": {
-      "type": "secrets",
-      "connectionId": "KeyVaultUri",
-      "dynamicId": null
-    },
     "identityapp1": {
       "type": "identityapp"
-    },
-    "secrets3": {
-      "type": "secrets"
-    },
-    "appInsights1": {
-      "type": "appInsights",
-      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING",
-      "dynamicId": null
     }
   }
 }

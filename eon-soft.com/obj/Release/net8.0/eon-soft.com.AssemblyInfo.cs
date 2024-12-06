@@ -11,11 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-eon_soft.core-f9240a07-42ff-48b4-baa7-075ffe8e4a74")]
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-eon_soft.com-f9240a07-42ff-48b4-baa7-075ffe8e4a74")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8eee5c55703e4c856c7e33ce10e3b709adce144")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e2f36d4a1111f8a3ed048dacfd56f68fe08abae")]
 [assembly: System.Reflection.AssemblyProductAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

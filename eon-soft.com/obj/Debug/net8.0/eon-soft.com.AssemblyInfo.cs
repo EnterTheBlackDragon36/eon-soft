@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0276a406158336600550920f7fd7e0c5f04f2902")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e2f36d4a1111f8a3ed048dacfd56f68fe08abae")]
 [assembly: System.Reflection.AssemblyProductAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eon-soft.com")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

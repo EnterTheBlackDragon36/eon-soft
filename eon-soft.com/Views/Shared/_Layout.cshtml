@@ -13,7 +13,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">eon-soft</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="@Url.Content("https://devstgacct0.blob.core.windows.net/logo/Eonsoft-logo-1.png?sp=r&st=2024-12-05T22:10:36Z&se=2025-12-06T06:10:36Z&spr=https&sv=2022-11-02&sr=b&sig=WjFEVd1gbHlBEjEls1ZkopbapI8285tlxr96tYhIKD4%3D")" height="50" width="50" alt="eon-soft" />
+                    </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,19 +41,16 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Apple" asp-action="AppleAIServices">Apple AI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Service" asp-action="Service">Services</a>
-                            </li>                            
+                            </li>                     
                         }
                     </ul>
                     <ul class="navbar-nav">
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <span class="navbar-text text-dark">Hello @User.Claims?.Where(c => c.Type == "name").FirstOrDefault()?.Value.ToString()</span>
-                            <li class="nav-item">
+@*                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Administrator" asp-action="Dashboard">Administrator</a>
-                            </li>
+                            </li> *@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>
                             </li>

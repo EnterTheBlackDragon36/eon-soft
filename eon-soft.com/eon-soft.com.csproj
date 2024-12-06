@@ -27,10 +27,4 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Apple\" />
-    <Folder Include="Views\Azure\" />
-    <Folder Include="Views\Google\" />
-  </ItemGroup>
-
 </Project>

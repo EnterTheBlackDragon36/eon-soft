@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/eon_soft.com.styles.css" asp-append-version="true" />
+    <style>
+        .dropbtn {
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,23 +66,90 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apps" asp-action="Privacy">Machine Learning</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Language</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Vision </a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Tabular</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Document</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Video</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Speech</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">Audio</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="MachineLearning" asp-action="Privacy">MultiModal</a>
+                                </div>
+                            </div>
+
                         </li>
-                        @if (User.Identity?.IsAuthenticated == true)
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Azure" asp-action="AzureAIServices">Azure AI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Google" asp-action="GoogleAIServices">Google AI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Amazon" asp-action="AmazonAIServices">Amazon AI</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Apple" asp-action="AppleAIServices">Apple AI</a>
-                            </li>                     
-                        }
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apps" asp-action="Privacy">Artificial Intelligence</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">LLM</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Image Capture and Generation </a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Document Analysis</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Unstructured Text</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Voice 2 Text 2 Voice</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Facial Detection</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apps" asp-action="Privacy">Quantum Computing</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Qubits</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Algorithms</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Measurements</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Environments</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="ArtificialIntelligence" asp-action="Privacy">Theories</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apps" asp-action="Privacy">Theoretical Physics</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Applications of Magnetism</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Communicating with deceased</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Deja Vu</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Gravity</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Telekinesis</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Teleportation</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">The Sun</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Time Travel</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Physics" asp-action="Privacy">Tachyon</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Apps" asp-action="Privacy">Architecture & Designs</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">Thought Bubble</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">Fetlife</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">My Favorite Part</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">Pigeon Held</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">TypeCast</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">Bar Crawler</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Architecture" asp-action="Privacy">Enterprise Manager</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        
+                            <div class="dropdown">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Cloud Resources</a>
+                                <div class="dropdown-content">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CloudResources" asp-action="Privacy">Azure</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CloudResources" asp-action="Privacy">Google Cloud Platform</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CloudResources" asp-action="Privacy">Amazon Web Services</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CloudResources" asp-action="Privacy">Firebase</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="CloudResources" asp-action="Privacy">OpenAI</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                     <ul class="navbar-nav">
                         @if (User.Identity?.IsAuthenticated == true)

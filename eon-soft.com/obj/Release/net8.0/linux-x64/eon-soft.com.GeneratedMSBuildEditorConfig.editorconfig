@@ -60,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGVcQXBwbGVBSVNlcnZpY2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/spide/source/repos/eon-soft/eon-soft.com/Views/Apps/Apps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwc1xBcHBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spide/source/repos/eon-soft/eon-soft.com/Views/ArtificialIntelligence/ArtIntelligence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWZpY2lhbEludGVsbGlnZW5jZVxBcnRJbnRlbGxpZ2VuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spide/source/repos/eon-soft/eon-soft.com/Views/Azure/AzureAIServices.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXp1cmVcQXp1cmVBSVNlcnZpY2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

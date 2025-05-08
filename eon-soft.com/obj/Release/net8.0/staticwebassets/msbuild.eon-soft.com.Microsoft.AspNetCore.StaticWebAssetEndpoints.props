@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\eon-soft.com.0m6ft9vlup.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0m6ft9vlup"},{"Name":"integrity","Value":"sha256-OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU="},{"Name":"label","Value":"_content/eon-soft.com/eon-soft.com.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 18:31:48 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Dec 2024 21:03:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eon-soft.com/eon-soft.com.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\eon-soft.com.0m6ft9vlup.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 18:31:48 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OAAixBkubwVMRn5x\u002B54x3\u002Bml/SwbKkf5IuOYaE8ikkU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 06 Dec 2024 21:03:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/eon-soft.com/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
